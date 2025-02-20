@@ -1,0 +1,19 @@
+{
+  "name": "19-02-2025-websockets-mongo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mongoose": "^8.10.1",
+    "mongoose-sequence": "^6.0.1",
+    "nodemon": "^3.1.9",
+    "ws": "^8.18.0"
+  }
+}
