@@ -82,27 +82,29 @@ class p2{
     public static double travel=0;
     public static double distance(int[][] food,int[][] nest,int i,int j)
     {
-        return Math.sqrt((int)Math.pow(food[i][0]-nest[j][0],2)+(int)Math.pow(food[i][1]-nest[j][1],2));
+        return Math.sqrt(Math.pow(food[i][0]-nest[j][0],2)+Math.pow(food[i][1]-nest[j][1],2));
     }
     public static int fun(int ind,int[][] food,int[][] nest,boolean[] v,int nestX,int time)
     {
         if(ind==food.length)
         {
         
-        travel+= Math.sqrt((int)Math.pow(homeX-nest[nestX][0],2)+(int)Math.pow(homeY-nest[nestX][1],2));
-        if(travel<=time)
-        {
-            return 0;
-        }
-        else{
-            return Integer.MIN_VALUE;
-        }
+        // travel+= Math.sqrt((int)Math.pow(homeX-nest[nestX][0],2)+(int)Math.pow(homeY-nest[nestX][1],2));
+        // if(travel<=time)
+        // {
+        //     return 0;
+        // }
+        // else{
+        //     return Integer.MIN_VALUE;
+        // }
 
+        return 0;
             
         }
         int count=0;
         for(int i=0;i<nest.length;i++)
         {
+            if(v[ind]) continue;
             double dist=distance(food,nest,ind,i);
             if(travel+dist<=time)
             {
